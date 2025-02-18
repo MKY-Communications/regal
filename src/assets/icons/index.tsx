@@ -1,0 +1,12 @@
+export {default as ArcIcon} from "./arc.png";
+export {default as TopSnail} from "./top-snail.png";
+export {default as BottomSnail} from "./bottom-snail.png";
+export {default as MailIcon} from "./mail.png";
+export {default as MenuBtn} from "./menu-btn.png";
+export {default as PhoneIcon} from "./phone.png";
+export {default as BritishCambridge} from "./british-cambridge.png";
+export {default as DynamicClassRooms} from "./dynamic-classrooms.png";
+export {default as GloballyRecognizedCertificate} from "./globally-recognized-certification.png";
+export {default as HolisticSkills} from "./holistic-skills-development.png";
+export {default as SekIesApproach} from "./sek-ies-approach.png";
+export {default as TeamBasedLearning} from "./team-based-learning.png";
