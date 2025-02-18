@@ -191,7 +191,6 @@ const HomePage: React.FC = (): JSX.Element => {
 
                 </Section> */}
                 <Section
-                    screenHeight
                 >
                     {/* World of Diversity */}
                     <div className="world-diversity">
