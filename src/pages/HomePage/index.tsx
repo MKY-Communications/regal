@@ -8,6 +8,7 @@ import { RegalStarSVG } from "../../assets/icons/RegalStarSVG";
 import { ArcIcon, BottomSnail, BritishCambridge, GloballyRecognizedCertificate, SekIesApproach, TopSnail } from "../../assets/icons";
 import ExtendableCard from "../../components/ui/Cards/ExpandableCard";
 import { EducationCard, ImageOverlay, ImageTextCard } from "../ShadyPage/ShadyPage";
+import ContactUs from "../../components/ContactUs";
 
 const HomePage: React.FC = (): JSX.Element => {
     return (
@@ -274,6 +275,9 @@ const HomePage: React.FC = (): JSX.Element => {
                         className="absolute bottom-snail"
                         loading="lazy"
                     />
+                </Section>
+                <Section screenHeight>
+                    <ContactUs />
                 </Section>
             <Footer />
         </Screen>
