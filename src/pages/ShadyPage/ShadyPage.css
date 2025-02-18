@@ -1,0 +1,121 @@
+.shady-page {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 192px;
+}
+
+.shady-section {
+  max-width: 1152px;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-overlay-card {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.image-overlay-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+.image-overlay-text {
+  position: absolute;
+  bottom: 10%; /* 10% away from the bottom */
+  left: 0;
+  right: 0;
+  padding: 0 20px; /* Optional: add padding for better readability */
+
+  color: #fff;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center; /* Center the text */
+}
+
+.image-text-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  height: 350px;
+  width: 100%;
+}
+
+.image-text-card-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 40%;
+}
+
+.image-text-card-subtitle {
+  color: #292768;
+  font-family: Poppins;
+  font-size: clamp(16px, 4vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.text-card-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  max-width: 667.035px;
+}
+
+.image-text-card-title {
+  color: #292768;
+  font-family: Poppins;
+  font-size: clamp(24px, 4vw, 48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 72px */
+}
+
+.orange-title {
+  color: #f6a200;
+  font-family: Poppins;
+  font-size: clamp(24px, 4vw, 48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.card-with-overlay-title {
+  color: #292768;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 36px */
+  text-align: left;
+  width: 100%;
+}
+
+.card-with-overlay-subtitle {
+  color: #292768;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+}
