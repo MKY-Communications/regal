@@ -27,7 +27,7 @@ const Footer: React.FC = (): JSX.Element => {
                                 decoding="async"
                                 loading="lazy"
                             />
-                            <a href="mailto:admission.recalcairo@iesmail.com">admission.recalcairo@iesmail.com</a>
+                            <a href="mailto:admissions@iesregalcairo.com">admissions@iesregalcairo.com</a>
                         </div>
                         <div>
                             <img

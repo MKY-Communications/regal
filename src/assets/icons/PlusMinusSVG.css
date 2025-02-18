@@ -1,0 +1,15 @@
+.verticalLine {
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.verticalLine.active {
+    transform: rotate(90deg);
+}
+
+
+.svg-plus-minus {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
