@@ -186,6 +186,82 @@ const HomePage: React.FC = (): JSX.Element => {
                     </div>
                 </Section>
                 <Section
+                    screenHeight
+                >
+                    {/* How We Shape Tommorrow */}
+
+                </Section>
+                <Section
+                    screenHeight
+                >
+                    {/* World of Diversity */}
+                    <div className="world-diversity">
+                        {/* Intro */}
+                        <div className="relative world-diversity__intro">
+                            <RegalStarSVG color="#F6A200" className="world-diversity-orange"/>
+                            <RegalStarSVG color="#292768" className="world-diversity-purple"/>
+                            <h2>
+                                A World of Diversity and Legacy
+                            </h2>
+                        </div>
+                        {/* Card Collection */}
+                        <div className="card-collection">
+                            <div className="star-card">
+                                <RegalStarSVG />
+                                <p>
+                                    <span className="regal-orange-text">
+                                        17
+                                    </span>
+                                    <br/>
+                                    COUNTRIES
+                                </p>
+                                <p className="hidden-message">
+                                    IES INTERNATIONAL EDUCATION SYSTEMS
+                                </p>
+                            </div>
+                            <div className="star-card active orange">
+                                <RegalStarSVG />
+                                <p>
+                                    <span className="regal-orange-text">
+                                        +130
+                                    </span>
+                                    <br/>
+                                    YEARS
+                                </p>
+                                <p className="hidden-message">
+                                    IES INTERNATIONAL EDUCATION SYSTEMS
+                                </p>
+                            </div>
+                            <div className="star-card purple">
+                                <RegalStarSVG />
+                                <p>
+                                    <span className="regal-orange-text">
+                                        +50
+                                    </span>
+                                    <br/>
+                                    NATIONALITIES
+                                </p>
+                                <p className="hidden-message">
+                                    IES INTERNATIONAL EDUCATION SYSTEMS
+                                </p>
+                            </div>
+                            <div className="star-card">
+                                <RegalStarSVG />
+                                <p>
+                                    <span className="regal-orange-text">
+                                        26
+                                    </span>
+                                    <br/>
+                                    SCHOOLS
+                                </p>
+                                <p className="hidden-message">
+                                    IES INTERNATIONAL EDUCATION SYSTEMS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </Section>
+                <Section
                     className="relative regal-purple-bg"
                     screenHeight
                 >

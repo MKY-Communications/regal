@@ -481,3 +481,220 @@
     flex-direction: column;
     gap: 1.5rem;
 }
+
+.world-diversity {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.world-diversity {
+    width: 100%;
+    max-width: 1152px;
+}
+
+@media (max-width: 768px) {
+    .world-diversity {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+.world-diversity__intro {
+    max-width: 368px;
+}
+
+@media (max-width: 768px) {
+    .world-diversity__intro {
+        max-width: fit-content;
+    }
+}
+
+.world-diversity__intro h2 {
+    color: var(--Regal-Purple);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 72px */
+}
+
+@media (max-width: 768px) {
+    .world-diversity__intro {
+        font-size: 1.625rem;
+    }
+}
+
+.world-diversity-orange {
+    position: absolute;
+    left: 0;
+    top: calc((18px + 41.873px) * -1);
+    width: 41.873px;
+    height: 41.872px;
+    flex-shrink: 0;
+}
+
+.world-diversity-purple {
+    position: absolute;
+    width: 25.333px;
+    height: 25.331px;
+    left: 42px;
+    top: calc((3px + 25.3px) * -1);
+}
+
+.card-collection {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    min-height: 304px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.star-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 172px;
+    height: 150px;
+    padding: 24px 10px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.star-card {
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.10);
+    flex-shrink: 0;
+}
+
+.star-card svg {
+    position: absolute;
+    left: 18.003px;
+    top: 16.007px;
+    width: 32.994px;
+    height: 32.993px;
+}
+.star-card path {
+    fill: #F6A200;
+}
+
+.star-card p {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 27px */
+}
+
+@media (min-width: 769px) {
+    .hidden-message {
+        display: none;
+    }
+
+    .star-card:hover {
+        color: #FFF !important;
+        background: url("../../assets/icons/bg-orange-card.png") no-repeat;
+        background-size: cover;
+        height: 220px;
+        box-shadow: none;
+        border: none;
+    }
+
+    .star-card:hover .hidden-message{
+        color: #FFF;
+        display: block;
+        font-size: 7.585px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 11.377px */
+    }
+
+    .star-card:hover .regal-orange-text {
+        color: #FFF;
+    }
+
+    .star-card:hover path {
+        fill: #FFF;
+    }
+
+    .star-card.active path {
+        fill: #FFF;
+    }
+
+    .star-card.active .regal-orange-text {
+        color: #FFF;
+    }
+
+    .star-card.active {
+        color: #FFF !important;
+        background: url("../../assets/icons/bg-orange-card.png") no-repeat;
+        background-size: cover;
+        height: 220px;
+        box-shadow: none;
+        border: none;
+    }
+
+    .star-card.active .hidden-message{
+        color: #FFF;
+        display: block;
+        font-size: 7.585px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 11.377px */
+    }
+
+}
+@media (max-width: 768px) {
+    .star-card {
+        display: flex;
+        width: 148px;
+        height: 148px;
+        padding: 16px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .star-card svg {
+        width: 28.39px;
+        height: 28.39px;
+        left: 15.491px;
+        top: 13.773px;
+    }
+
+    .star-card p {
+        color: #292768;
+        font-size: 1rem;
+    }
+    .hidden-message {
+        color: #292768;
+        font-size: 5px !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 9px */
+    }
+
+    .star-card.orange {
+        background: var(--Regal-Orange);
+    }
+
+    .star-card.purple {
+        background: var(--Regal-Purple);
+    }
+
+    .star-card.orange path, .star-card.purple path {
+        fill: #FFF;
+    }
+
+    .star-card.orange p, .star-card.purple p {
+        color: #FFF !important;
+    }
+
+    .star-card.orange .regal-orange-text, .star-card.purple .regal-orange-text{
+        color: #FFF;
+    }
+}

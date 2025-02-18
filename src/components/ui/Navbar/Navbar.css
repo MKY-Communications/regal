@@ -117,5 +117,6 @@ nav {
 @media (max-width: 768px) {
     .drawer-menu-btn {
         display: inline;
+        visibility: hidden;
     }
 }

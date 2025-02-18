@@ -135,6 +135,7 @@ form button {
     outline: none;
     cursor: pointer;
     margin-left: auto;
+    border: none;
 }
 
 .contact-container {
