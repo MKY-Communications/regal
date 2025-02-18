@@ -3,17 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 192px;
+  gap: 96px;
+  padding-block: 4rem;
 }
 
 .shady-section {
   max-width: 1152px;
-  /* height: 100vh; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 24px;
   align-items: center;
   justify-content: center;
+  padding-inline: 1rem;
 }
 
 .image-overlay-card {
@@ -28,7 +30,7 @@
 .image-overlay-image {
   width: 100%;
   height: 100%;
-
+  max-height: 350px;
   display: block;
 }
 
@@ -41,7 +43,7 @@
 
   color: #fff;
   font-family: Poppins;
-  font-size: 48px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -53,7 +55,6 @@
   align-items: center;
   gap: 24px;
   align-self: stretch;
-  height: 350px;
   width: 100%;
 }
 
@@ -61,8 +62,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  max-width: 40%;
+
+  max-width: 42%;
 }
 
 .image-text-card-subtitle {
@@ -76,11 +77,16 @@
 
 .text-card-image {
   height: 100%;
-  width: 100%;
+  max-height: 350px;
+  width: 70%;
   border-radius: 20px;
   max-width: 667.035px;
 }
-
+@media (max-width: 860px) {
+  .text-card-image {
+    width: 60%;
+  }
+}
 .image-text-card-title {
   color: #292768;
   font-family: Poppins;
@@ -102,7 +108,7 @@
 .card-with-overlay-title {
   color: #292768;
   font-family: Poppins;
-  font-size: 24px;
+  font-size: clamp(16px, 4vw, 24px);
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 36px */
@@ -118,4 +124,163 @@
   font-weight: 400;
   line-height: 150%;
   text-align: left;
+}
+
+.foundations-title-container {
+  display: flex;
+  width: 93%;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.foundations-title {
+  color: #292768;
+  font-family: Poppins;
+  font-size: clamp(32px, 4vw, 48px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 72px */
+}
+.foundations-subtitle {
+  color: #292768;
+  text-align: center;
+  font-family: Poppins;
+  font-size: clamp(16px, 4vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+.orange-p {
+  color: #faa225;
+  font-family: Poppins;
+  font-size: clamp(16px, 4vw, 18px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@media (max-width: 768px) {
+  .foundations-title-container {
+    width: 100%;
+    text-align: left;
+  }
+  .foundations-subtitle {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-text-card {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .image-text-card-text-container {
+    max-width: 100%;
+    align-items: flex-start;
+  }
+  .text-card-image {
+    width: 100%;
+
+    aspect-ratio: 312/170;
+  }
+  .image-text-card.reverse {
+    flex-direction: column-reverse;
+    gap: 16px; /* Reverse row for large screens */
+  }
+  .image-overlay-image {
+    aspect-ratio: 312/320;
+  }
+  .image-overlay-text {
+    font-size: 24px;
+  }
+  .shady-page {
+    gap: 96px;
+  }
+}
+
+.education-cards-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+.education-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 368px;
+}
+
+.education-card-image {
+  border-radius: 50%;
+  aspect-ratio: 80/80;
+  max-width: 80px;
+}
+
+.education-card-title {
+  color: #292768;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.education-card-subtitle {
+  color: #292768;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.education-title-container {
+  display: flex;
+  max-width: 705.813px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.education-card-sub-title-max-width-307px {
+  max-width: 307px;
+}
+.education-card-sub-title-max-width-268px {
+  max-width: 268.632px;
+}
+.education-card-title-max-width-195px {
+  max-width: 195px;
+}
+@media (max-width: 768px) {
+  .education-cards-container {
+    flex-direction: column;
+  }
+  .education-title {
+    color: #292768;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    width: 312px;
+  }
+  .education-card-image {
+    aspect-ratio: 50/50;
+    max-width: 50px;
+  }
+  .education-card-sub-title-max-width-307px {
+    max-width: 100%;
+  }
+  .education-card-sub-title-max-width-268px {
+    max-width: 100%;
+  }
+  .education-card-title-max-width-195px {
+    max-width: 100%;
+  }
 }

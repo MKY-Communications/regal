@@ -7,9 +7,6 @@ import { RegalStarSVG } from "../../assets/icons/RegalStarSVG";
 import { ArcIcon, BottomSnail, TopSnail } from "../../assets/icons";
 import ExtendableCard from "../../components/ui/Cards/ExpandableCard";
 
-
-
-
 const HomePage: React.FC = (): JSX.Element => {
     return (
         <Screen>
@@ -160,6 +157,5 @@ const HomePage: React.FC = (): JSX.Element => {
         </Screen>
     )
 }
-
 
 export default HomePage;
