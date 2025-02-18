@@ -7,16 +7,15 @@ import {
 import { NurturingCuriosity } from "../../assets/images/home-page";
 import { RegalAdvantage } from "../../assets/images/home-page";
 import { DevelopingEssential } from "../../assets/images/home-page";
+
+import {
+  GloballyRecognizedCertificate,
+  SekIesApproach,
+  BritishCambridge,
+} from "../../assets/icons";
 const ShadyPage: React.FC = (): JSX.Element => {
   return (
     <div className="shady-page">
-      <div className="shady-section">
-        <ImageOverlay
-          src={NurturingCuriosity}
-          overlay="Nurturing Curiosity"
-          alt="regal legacy"
-        />
-      </div>
       <div className="shady-section">
         <ImageTextCard
           title={
@@ -40,6 +39,19 @@ const ShadyPage: React.FC = (): JSX.Element => {
         />
       </div>
       <div className="shady-section">
+        <div className="foundations-title-container">
+          <h1 className="foundations-title">
+            Building Foundations for Lifelong Success
+          </h1>
+          <p className="foundations-subtitle">
+            At{" "}
+            <span className="orange-p ">Regal Cairo International School</span>{" "}
+            , we believe that the early years are the most critical in shaping a
+            child's future. Our Early years programme is designed to provide a
+            solid foundation for lifelong learning and success. We Lay the
+            Groundwork for Excellence through
+          </p>
+        </div>
         <ImageTextCard
           title={
             <h2 className="card-with-overlay-title">Nurturing Curiosity: </h2>
@@ -52,6 +64,7 @@ const ShadyPage: React.FC = (): JSX.Element => {
               overlay="Nurturing Curiosity"
             />
           }
+          addcss="column-reverse-mobile"
         />
         <ImageTextCard
           title={
@@ -68,6 +81,7 @@ const ShadyPage: React.FC = (): JSX.Element => {
             />
           }
           reverse
+          addcss="column-reverse-mobile"
         />
         <ImageTextCard
           title={
@@ -83,7 +97,38 @@ const ShadyPage: React.FC = (): JSX.Element => {
               overlay="Cultivating Creativity and Confidence"
             />
           }
+          addcss="column-reverse-mobile"
         />
+      </div>
+      <div className="shady-section">
+        <div className="education-title-container">
+          <p className="education-card-subtitle">
+            Academic Excellence and Global Recognition
+          </p>
+          <h2 className="foundations-title education-title">
+            What Makes Our Education Exceptional?
+          </h2>
+        </div>
+        <div className="education-cards-container">
+          <EducationCard
+            src={BritishCambridge}
+            title="British Cambridge Curriculum"
+            subtitle=" A globally recognized framework that promotes analytical thinking, problem-solving, and research-based learning."
+            subtitleaddcss="education-card-sub-title-max-width-268px "
+          />
+          <EducationCard
+            src={SekIesApproach}
+            title="SEK-IES Approach"
+            subtitle=" A student-centered philosophy that encourages creativity, collaboration, and responsible action through real-world challenges"
+            subtitleaddcss="education-card-sub-title-max-width-307px "
+            titleaddcss="education-card-title-max-width-195px"
+          />
+          <EducationCard
+            src={GloballyRecognizedCertificate}
+            title="Globally Recognized Certification"
+            subtitle="Regal CIS graduates receive internationally accepted qualifications that open doors to top universities worldwide, including institutions in the UK, the US, and Europe."
+          />
+        </div>
       </div>
     </div>
   );
@@ -115,6 +160,7 @@ interface IImageTextCard {
   title: React.ReactNode;
   subtitle: string;
   reverse?: boolean;
+  addcss?: string;
 }
 
 export const ImageTextCard: React.FC<IImageTextCard> = ({
@@ -122,15 +168,41 @@ export const ImageTextCard: React.FC<IImageTextCard> = ({
   title,
   subtitle,
   reverse = false,
+  addcss = "",
 }): JSX.Element => {
   return (
-    <div className="image-text-card">
+    <div className={`image-text-card ${reverse ? "reverse" : ""}${addcss}`}>
       {reverse ? image : ""}
       <div className="image-text-card-text-container">
         {title}
         <p className="image-text-card-subtitle">{subtitle}</p>
       </div>
       {!reverse ? image : ""}
+    </div>
+  );
+};
+
+interface IEducationCard {
+  src?: string;
+  alt?: string;
+  title: string;
+  subtitle: string;
+  subtitleaddcss?: string;
+  titleaddcss?: string;
+}
+export const EducationCard: React.FC<IEducationCard> = ({
+  src,
+  alt,
+  title,
+  subtitle,
+  subtitleaddcss = "",
+  titleaddcss = "",
+}): JSX.Element => {
+  return (
+    <div className="education-card">
+      <img src={src} alt={alt} className="education-card-image" />
+      <h2 className={`education-card-title ${titleaddcss}`}>{title}</h2>
+      <p className={`education-card-subtitle ${subtitleaddcss}`}>{subtitle}</p>
     </div>
   );
 };
