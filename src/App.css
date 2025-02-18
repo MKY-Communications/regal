@@ -1,0 +1,22 @@
+:root {
+    font-family: "Poppins", serif;
+    --Regal-Orange: #FAA225;
+    --Regal-Purple: #292768;
+}
+
+
+.regal-orange-bg {
+    background: var(--Regal-Orange);
+}
+
+.regal-purple-bg {
+    background: var(--Regal-Purple);
+}
+
+.regal-orange-text {
+    color: var(--Regal-Orange);
+}
+
+.regal-purple-text {
+    color: var(--Regal-Purple);
+}
