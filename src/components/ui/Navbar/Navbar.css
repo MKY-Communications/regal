@@ -1,0 +1,121 @@
+
+nav {
+    width: inherit;
+    background: #fff;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    transition: background 0.5s ease-in-out;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-items {
+    width: 100%;
+    max-width: 1152px;
+}
+
+.navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-items__logo {
+    width: 234.595px;
+    height: 56px;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-items__logo {
+        width: 201.081px;
+        height: 48px;
+        flex-shrink: 0;
+    }
+}
+
+.navbar-items__logo:hover {
+    filter: brightness(0.8);
+    opacity: 0.8;
+}
+
+.navbar-items__route-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    gap: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-items__route-group {
+        display: none;
+    }
+}
+
+.navbar-items__route-group p {
+    color: var(--Regal-Purple);
+    /* Body Text */
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+
+    cursor: pointer;
+}
+
+.contact-us-btn {
+    display: flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-us-btn {
+    border-radius: 8px;
+    background: var(--Regal-Orange);
+    box-sizing: content-box;
+    color: white;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+.contact-us-btn {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.2px;
+}
+
+.contact-us-btn:hover {
+    background:  var(--Regal-Purple);
+}
+
+@media (max-width: 768px) {
+    .contact-us-btn {
+        display: none;
+    }
+}
+
+
+.drawer-menu-btn {
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.drawer-menu-btn {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .drawer-menu-btn {
+        display: inline;
+    }
+}
