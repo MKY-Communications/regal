@@ -449,3 +449,35 @@
     max-width: 1152px;
     gap: 1.5rem;
 }
+
+
+.regal-second-section {
+    width: 100%;
+    max-width: 1152px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.regal-third-section {
+    width: 100%;
+    max-width: 1152px;
+}
+
+.regal-third-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.regal-fourth-section {
+    width: 100%;
+    max-width: 1152px;
+}
+
+.regal-fourth-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

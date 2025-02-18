@@ -204,6 +204,13 @@
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .education-cards-container {
+    align-self: center;
+  }
 }
 .education-card {
   display: flex;
