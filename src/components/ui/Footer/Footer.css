@@ -1,0 +1,158 @@
+footer {
+    width: inherit;
+    padding-inline: 1rem;
+    padding-top: 83px;
+    background: var(--Regal-Purple);
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer {
+    position: relative;
+}
+
+footer {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding-top: 0;
+        padding-block: 3rem;
+    }
+}
+
+
+.footer-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1152px;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .footer-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+}
+
+.footer-details__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .footer-details__logo {
+        gap: 1rem;
+        align-items: flex-start;
+    }
+}
+
+.footer-details__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-details__contacts div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-details__logo-image {
+    width: 410px;
+    height: 97px;
+    object-fit: contain;
+}
+
+.footer-bg-image {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    max-width: 1238px;
+}
+
+@media (max-width: 768px){
+    .footer-bg-image {
+        display: none;
+    }
+}
+
+.footer-details__contacts-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-policy {
+    display: flex;
+    width: 100%;
+    max-width: 1152px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 2rem;
+}
+
+.footer-policy p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+@media (max-width: 768px) {
+    .footer-policy {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0;
+        margin-top: 3rem;
+    }
+}
+
+
+.footer-details__resources {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .footer-details__resources {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-column h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.footer-gap-23 {
+    gap: 23px;
+}
