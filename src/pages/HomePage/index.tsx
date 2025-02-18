@@ -185,12 +185,11 @@ const HomePage: React.FC = (): JSX.Element => {
                         />
                     </div>
                 </Section>
-                <Section
+                {/* <Section
                     screenHeight
                 >
-                    {/* How We Shape Tommorrow */}
 
-                </Section>
+                </Section> */}
                 <Section
                     screenHeight
                 >
