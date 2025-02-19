@@ -2,10 +2,12 @@ import "./Footer.css";
 import FooterBGImage from "../../../assets/images/footer/footer-bg.png";
 import RegalFooterIcon from "../../../assets/images/footer/regal-footer-logo.png";
 import { MailIcon, PhoneIcon } from "../../../assets/icons";
+import { useSmoothScroll } from "../../../hooks/useSmoothScroll";
 
 
 
 const Footer: React.FC = (): JSX.Element => {
+    const {scrollToSection} = useSmoothScroll();
     return (
         <footer>
             <div className="footer-details">
@@ -47,12 +49,12 @@ const Footer: React.FC = (): JSX.Element => {
                 <div className="footer-details__resources">
                     <div className="footer-column">
                         <h2>Resources</h2>
-                        <p>About Us</p>
-                        <p>Academics</p>
-                        <p>Foundations</p>
-                        <p>Visionaries</p>
-                        <p>Global</p>
-                        <p>Admissions</p>
+                        <p onClick={() => scrollToSection("about")}>About Us</p>
+                        <p onClick={() => scrollToSection("academics")}>Academics</p>
+                        <p onClick={() => scrollToSection("foundations")}>Foundations</p>
+                        <p onClick={() => scrollToSection("visionaries")}>Visionaries</p>
+                        <p onClick={() => scrollToSection("global")}>Global</p>
+                        <p onClick={() => scrollToSection("admissions")}>Admissions</p>
                     </div>
                     <div className="footer-column footer-gap-23">
                         <h2>

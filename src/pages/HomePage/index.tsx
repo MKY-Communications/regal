@@ -5,12 +5,15 @@ import Screen, { Section } from "../../components/ui/Containers/Container";
 import Footer from "../../components/ui/Footer/Footer";
 import { CultivatingCreativity, DevelopingEssential, GlobalExposure, HomePageHeaderOne, HomePageHeaderTwo, NurturingCuriosity, RegalAdvantage, RegalLegacy } from "../../assets/images/home-page";
 import { RegalStarSVG } from "../../assets/icons/RegalStarSVG";
-import { ArcIcon, BottomSnail, BritishCambridge, GloballyRecognizedCertificate, SekIesApproach, TopSnail } from "../../assets/icons";
+import { ArcIcon, BottomSnail, BritishCambridge, DynamicClassRooms, GloballyRecognizedCertificate, HolisticSkills, SekIesApproach, TeamBasedLearning, TopSnail } from "../../assets/icons";
 import ExtendableCard from "../../components/ui/Cards/ExpandableCard";
 import { EducationCard, ImageOverlay, ImageTextCard } from "../ShadyPage/ShadyPage";
 import ContactUs from "../../components/ContactUs";
+import { useSmoothScroll } from "../../hooks/useSmoothScroll";
 
 const HomePage: React.FC = (): JSX.Element => {
+    const { scrollToSection } = useSmoothScroll();
+
     return (
         <Screen>
             <Header />
@@ -59,13 +62,13 @@ const HomePage: React.FC = (): JSX.Element => {
                             <p>
                                 A place where you can unlock your child's potential.
                             </p>
-                            <p className="top-banner__btn">
+                            <p className="top-banner__btn" onClick={() => scrollToSection("about")}>
                                 About us
                             </p>
                         </div>
                     </div>
                 </Section>
-                <Section screenHeight>
+                <Section id="about">
                     <div className="regal-second-section">
                         <ImageTextCard
                             title={
@@ -89,7 +92,7 @@ const HomePage: React.FC = (): JSX.Element => {
                         />
                     </div>
                 </Section>
-                <Section screenHeight>
+                <Section id="academics">
                     <div className="regal-third-section">
                         <div className="education-title-container">
                             <p className="education-card-subtitle">
@@ -121,7 +124,7 @@ const HomePage: React.FC = (): JSX.Element => {
                         </div>
                     </div>
                 </Section>
-                <Section screenHeight>
+                <Section id="foundations">
                     <div className="regal-fourth-section">
                         <div className="foundations-title-container">
                             <h1 className="foundations-title">
@@ -185,12 +188,71 @@ const HomePage: React.FC = (): JSX.Element => {
                         />
                     </div>
                 </Section>
-                {/* <Section
-                    screenHeight
-                >
-
-                </Section> */}
                 <Section
+                >
+                    <div className="how-to-shape-tommorrow">
+                        <div className="how-to-shape__intro">
+                            <p>
+                            Nurturing Future Leaders
+                            </p>
+                            <h2>
+                            How We Shape Tomorrow’s Leaders
+                            </h2>
+                        </div>
+                        <div className="how-to-shape__details">
+                            <div className="how-to-shape-row">
+                                <img
+                                    src={TeamBasedLearning}
+                                    alt="Team Based Learning"
+                                    decoding="async"
+                                    loading="lazy"
+                                />
+                                <div className="how-to-shape-row__details">
+                                    <h2>
+                                    Team-Based Learning
+                                    </h2>
+                                    <p> 
+                                    From group projects to sports team-building exercises, students develop leadership, accountability, and problem-solving skills.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="how-to-shape-row">
+                                <img
+                                    src={HolisticSkills}
+                                    alt="Holistic Skill Development"
+                                    decoding="async"
+                                    loading="lazy"
+                                />
+                                <div className="how-to-shape-row__details">
+                                    <h2>
+                                    Holistic Skill Development
+                                    </h2>
+                                    <p> 
+                                    Through exposure to interpersonal and soft skills training, students become confident communicators and decision-makers.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="how-to-shape-row">
+                                <img
+                                    src={DynamicClassRooms}
+                                    alt="Dyanmic Class Rooms"
+                                    decoding="async"
+                                    loading="lazy"
+                                />
+                                <div className="how-to-shape-row__details">
+                                    <h2>
+                                    Dynamic Classrooms
+                                    </h2>
+                                    <p> 
+                                    Subjects are taught interactively, encouraging critical thinking, research, presentation, and debate skills.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Section>
+                <Section
+                    id="visionaries"
                 >
                     {/* World of Diversity */}
                     <div className="world-diversity">
@@ -262,6 +324,7 @@ const HomePage: React.FC = (): JSX.Element => {
                 <Section
                     className="relative regal-purple-bg"
                     screenHeight
+                    id="global"
                 >
                     {/* Top Snail */}
                     <img
@@ -350,7 +413,7 @@ const HomePage: React.FC = (): JSX.Element => {
                         loading="lazy"
                     />
                 </Section>
-                <Section screenHeight>
+                <Section screenHeight id="admissions">
                     <ContactUs />
                 </Section>
             <Footer />

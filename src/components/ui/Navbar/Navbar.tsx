@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { MenuBtn } from "../../../assets/icons";
 import NavbarLogo from "../../../assets/images/navbar/navbar-logo.png";
+import { useSmoothScroll } from "../../../hooks/useSmoothScroll";
 
 
 // Reactify Component
@@ -25,6 +26,7 @@ interface RegalNavBarProps {
 
 export const RegalNavBar: React.FC<RegalNavBarProps> = ({setOpen, open}): JSX.Element => {
     const navigate = useNavigate();
+    const {scrollToSection} = useSmoothScroll();
     return (
         <Navbar>
             <div className="navbar-items">
@@ -37,23 +39,23 @@ export const RegalNavBar: React.FC<RegalNavBarProps> = ({setOpen, open}): JSX.El
                         decoding="async"
                 />
                 <div className="navbar-items__route-group">
-                        <p>
+                        <p onClick={() => scrollToSection("about")}>
                             About Us
                         </p>
-                        <p>
+                        <p onClick={() => scrollToSection("academics")}>
                             Academics
                         </p>
-                        <p>
+                        <p onClick={() => scrollToSection("foundations")}>
                             Foundations
                         </p>
-                        <p>
+                        <p onClick={() => scrollToSection("visionaries")}>
                             Visionaries
                         </p>
-                        <p>
+                        <p onClick={() => scrollToSection("global")}>
                             Global
                         </p>
                         {/* Contact Us Btn Or Drawer Menu*/}
-                        <div className="contact-us-btn">
+                        <div className="contact-us-btn" onClick={() => scrollToSection("admissions")}>
                             Admissions
                         </div>
                 </div>

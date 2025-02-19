@@ -14,6 +14,10 @@
   font: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", serif;
   min-height: 100vh;
