@@ -77,7 +77,7 @@ const HomePage: React.FC = (): JSX.Element => {
                                 Reach
                             </h1>
                             }
-                            subtitle="For over 132 years, Regal Cairo International School joins a legacy of excellence as the 26th school in the 17th country under SEK-IES management. Offering an internationally recognized Cambridge curriculum, Regal CIS is part of a global network committed to shaping bright minds."
+                            subtitle="Regal Cairo International School joins the enduring 132-year legacy of excellence as the 26th school in the 17th country under SEK-IES management."
                             image={<img src={RegalLegacy} className="text-card-image" />}
                         />
                         <ImageTextCard
