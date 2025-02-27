@@ -63,9 +63,6 @@ const Footer: React.FC = (): JSX.Element => {
                         <p>
                             Plot No. 12. Shargia Expansion. Mall of Egypt Street. 6th of October, Giza, Egypt
                         </p>
-                        <p>
-                        قطعة رقم 12 منطقة التوسعات الشرقية 6 اكتوبر محافظة الجيزة -مصر
-                        </p>
                     </div>
                 </div>
             </div>
