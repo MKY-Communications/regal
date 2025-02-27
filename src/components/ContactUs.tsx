@@ -60,9 +60,7 @@ const ContactUs: React.FC = (): JSX.Element => {
                     </div>
                     <div className="contact-container">
                         <img src={PhoneIcon} alt="Contact Us Phone" loading="lazy" decoding="async" />
-                        <a href="tel:01281794508">01281794508</a>
-                        <a href="tel:01281794308">01281794308</a>
-                        <a href="tel:01281794502">01281794502</a>
+                        <a href="https://wa.me/01281794502" target="_blank">01281794502</a>
                     </div>
                 </div>
                 <form onSubmit={handleSubmit}>
