@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./ContactUs.css";
-import { MailIcon, PhoneIcon } from "../assets/icons";
+import { MailIcon, PhoneIcon, PhoneTwoIcon } from "../assets/icons";
 
 
 const GoogleScripts: string = "https://script.google.com/macros/s/AKfycbx6ZJIxxoiWWGcboPnrT-_3oh3NEinX2FSdSgA-sCXtSERoipk22iVNL4NBYvkJBg/exec"
@@ -57,6 +57,16 @@ const ContactUs: React.FC = (): JSX.Element => {
                     <div className="contact-container">
                         <img src={MailIcon} alt="Contact Us Mail" loading="lazy" decoding="async" />
                         <a href="mailto:admissions@iesregalcairo.com">admissions@iesregalcairo.com</a>
+                    </div>
+                    <div className="contact-container">
+                        <img
+                            src={PhoneTwoIcon}
+                            alt="Phone Number"
+                            loading="lazy"
+                            decoding="async"
+                            />
+                        <a href="tel:01281794508">01281794508</a>
+                        <a href="tel:01281794308">01281794308</a>
                     </div>
                     <div className="contact-container">
                         <img src={PhoneIcon} alt="Contact Us Phone" loading="lazy" decoding="async" />

@@ -1,7 +1,7 @@
 import "./Footer.css";
 import FooterBGImage from "../../../assets/images/footer/footer-bg.png";
 import RegalFooterIcon from "../../../assets/images/footer/regal-footer-logo.png";
-import { MailIcon, PhoneIcon } from "../../../assets/icons";
+import { MailIcon, PhoneIcon, PhoneTwoIcon } from "../../../assets/icons";
 import { useSmoothScroll } from "../../../hooks/useSmoothScroll";
 
 
@@ -30,6 +30,17 @@ const Footer: React.FC = (): JSX.Element => {
                                 loading="lazy"
                             />
                             <a href="mailto:admissions@iesregalcairo.com">admissions@iesregalcairo.com</a>
+                        </div>
+                        <div>
+                            <img
+                                src={PhoneTwoIcon}
+                                alt="Phone Icon"
+                                className="footer-details__contacts-icon"
+                                decoding="async"
+                                loading="lazy"
+                            />
+                            <a href="tel:01281794508">01281794508</a>
+                            <a href="tel:01281794308">01281794308</a>
                         </div>
                         <div>
                             <img
