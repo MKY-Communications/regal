@@ -9,10 +9,10 @@ import { ArcIcon, BottomSnail, BritishCambridge, DynamicClassRooms, GloballyReco
 import ExtendableCard from "../../components/ui/Cards/ExpandableCard";
 import { EducationCard, ImageOverlay, ImageTextCard } from "../ShadyPage/ShadyPage";
 import ContactUs from "../../components/ContactUs";
-import { useSmoothScroll } from "../../hooks/useSmoothScroll";
+//import { useSmoothScroll } from "../../hooks/useSmoothScroll";
 
 const HomePage: React.FC = (): JSX.Element => {
-    const { scrollToSection } = useSmoothScroll();
+    //const { scrollToSection } = useSmoothScroll();
 
     return (
         <Screen>
@@ -62,9 +62,9 @@ const HomePage: React.FC = (): JSX.Element => {
                             <p>
                                 A place where you can unlock your child's potential.
                             </p>
-                            <p className="top-banner__btn" onClick={() => scrollToSection("about")}>
-                                About us
-                            </p>
+                            <a className="top-banner__btn" href="https://regalcis.typeform.com/2025admission" target="_blank">
+                                Apply Now
+                            </a>
                         </div>
                     </div>
                 </Section>

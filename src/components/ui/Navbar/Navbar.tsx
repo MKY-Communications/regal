@@ -55,9 +55,9 @@ export const RegalNavBar: React.FC<RegalNavBarProps> = ({setOpen, open}): JSX.El
                             Global
                         </p>
                         {/* Contact Us Btn Or Drawer Menu*/}
-                        <div className="contact-us-btn" onClick={() => scrollToSection("admissions")}>
+                        <a className="contact-us-btn" href="https://regalcis.typeform.com/2025admission" target="_blank">
                             Admissions
-                        </div>
+                        </a>
                 </div>
                 
                 <img
