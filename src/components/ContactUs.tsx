@@ -1,11 +1,12 @@
-import { useState } from "react";
+//import { useState } from "react";
 import "./ContactUs.css";
-import { MailIcon, PhoneIcon, PhoneTwoIcon } from "../assets/icons";
+import { MailIcon, PhoneIcon, PhoneTwoIcon, ArrowIcon } from "../assets/icons";
 
 
-const GoogleScripts: string = "https://script.google.com/macros/s/AKfycbx6ZJIxxoiWWGcboPnrT-_3oh3NEinX2FSdSgA-sCXtSERoipk22iVNL4NBYvkJBg/exec"
+//const GoogleScripts: string = "https://script.google.com/macros/s/AKfycbx6ZJIxxoiWWGcboPnrT-_3oh3NEinX2FSdSgA-sCXtSERoipk22iVNL4NBYvkJBg/exec"
 
 const ContactUs: React.FC = (): JSX.Element => {
+    /*
     const [sendingEmail, setSendingEmail] = useState<boolean>(false);
     const [formData, setFormData] = useState({
         name: "",
@@ -40,7 +41,7 @@ const ContactUs: React.FC = (): JSX.Element => {
             setFormData({ name: "", surname: "", email: "", phone: "", message: "" });
         }
     };
-
+    */
     return (
         <div className="contact-us-section">
             <h2>
@@ -72,7 +73,16 @@ const ContactUs: React.FC = (): JSX.Element => {
                         <a href="https://wa.me/01281794502" target="_blank">01281794502</a>
                     </div>
                 </div>
-                <form onSubmit={handleSubmit}>
+                <a className="contact-us-details__form-link" href="https://regalcis.typeform.com/2025admission" target="_blank">
+                <p>Begin Your <span className=" regal-orange-text">Regal</span> Application Here </p>
+                <img 
+                    src={ArrowIcon}
+                    alt="Arrow Icon"
+                    decoding="async"
+                    loading="lazy"
+                />
+                </a>
+                {/* <form onSubmit={handleSubmit}>
                     <div className="form-row">
                         <div className="form-group">
                             <label className="form-label">Name</label>
@@ -145,7 +155,7 @@ const ContactUs: React.FC = (): JSX.Element => {
                     <button role="submit" disabled={sendingEmail}>
                         {sendingEmail ? "Sending..." : "Send"}
                     </button>
-                </form>
+                </form>*/}
             </div>
         </div>
     );

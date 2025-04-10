@@ -11,3 +11,4 @@ export {default as HolisticSkills} from "./holistic-skills-development.png";
 export {default as SekIesApproach} from "./sek-ies-approach.png";
 export {default as TeamBasedLearning} from "./team-based-learning.png";
 export {default as PhoneTwoIcon} from "./phone-two.png";
+export {default as ArrowIcon} from "./next.svg"
