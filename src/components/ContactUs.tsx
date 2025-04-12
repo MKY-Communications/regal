@@ -73,7 +73,7 @@ const ContactUs: React.FC = (): JSX.Element => {
                         <a href="https://wa.me/01281794502" target="_blank">01281794502</a>
                     </div>
                 </div>
-                <a className="contact-us-details__form-link" href="https://regalcis.typeform.com/2025admission" target="_blank">
+                <a className="contact-us-details__form-link" href="https://regalcis.typeform.com/2025admission">
                 <p>Begin Your <span className=" regal-orange-text">Regal</span> Application Here </p>
                 <img 
                     src={ArrowIcon}
