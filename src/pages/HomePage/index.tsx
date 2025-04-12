@@ -62,7 +62,7 @@ const HomePage: React.FC = (): JSX.Element => {
                             <p>
                                 A place where you can unlock your child's potential.
                             </p>
-                            <a className="top-banner__btn" href="https://regalcis.typeform.com/2025admission" target="_blank">
+                            <a className="top-banner__btn" href="https://regalcis.typeform.com/2025admission">
                                 Apply Now
                             </a>
                         </div>
