@@ -30,6 +30,7 @@ const Footer: React.FC = (): JSX.Element => {
                                 loading="lazy"
                             />
                             <a href="mailto:admissions@iesregalcairo.com">admissions@iesregalcairo.com</a>
+                            <a href="mailto:careers@iesregalcairo.com">careers@iesregalcairo.com</a>
                         </div>
                         <div>
                             <img
