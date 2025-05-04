@@ -58,8 +58,14 @@ const ContactUs: React.FC = (): JSX.Element => {
                     <div className="contact-container">
                         <img src={MailIcon} alt="Contact Us Mail" loading="lazy" decoding="async" />
                         <a href="mailto:admissions@iesregalcairo.com">admissions@iesregalcairo.com</a>
-                        <a href="mailto:careers@iesregalcairo.com">careers@iesregalcairo.com</a>
+
                     </div>
+                    <div className="contact-container">
+                        <img src={MailIcon} alt="Contact Us Mail" loading="lazy" decoding="async" />
+                        <a href="mailto:careers@iesregalcairo.com">careers@iesregalcairo.com</a>
+
+                    </div>
+                    
                     <div className="contact-container">
                         <img
                             src={PhoneTwoIcon}

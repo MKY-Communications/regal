@@ -34,6 +34,16 @@ const Footer: React.FC = (): JSX.Element => {
                         </div>
                         <div>
                             <img
+                                src={MailIcon}
+                                alt="Mail Icon"
+                                className="footer-details__contacts-icon"
+                                decoding="async"
+                                loading="lazy"
+                            />
+                            <a href="mailto:careers@iesregalcairo.com">careers@iesregalcairo.com</a>
+                        </div>
+                        <div>
+                            <img
                                 src={PhoneTwoIcon}
                                 alt="Phone Icon"
                                 className="footer-details__contacts-icon"
