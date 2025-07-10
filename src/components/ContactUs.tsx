@@ -53,8 +53,13 @@ const ContactUs: React.FC = (): JSX.Element => {
             <div className="contact-us-section__inner-container">
                 <div className="contact-us-details">
                     <h4>Contact Detail</h4>
-                    <p>Location</p>
+                    <p>Location</p> 
                     <p>Plot No. 12. Shargia Expansion. Mall of Egypt Street. 6th of October, Giza, Egypt</p>
+                    <div className="contact-container">
+                        <img src={MailIcon} alt="Contact Us Mail" loading="lazy" decoding="async" />
+                        <a href="mailto:Info@iesregalcairo.com">Info@iesregalcairo.com</a>
+
+                    </div>
                     <div className="contact-container">
                         <img src={MailIcon} alt="Contact Us Mail" loading="lazy" decoding="async" />
                         <a href="mailto:admissions@iesregalcairo.com">admissions@iesregalcairo.com</a>

@@ -29,6 +29,16 @@ const Footer: React.FC = (): JSX.Element => {
                                 decoding="async"
                                 loading="lazy"
                             />
+                            <a href="mailto:Info@iesregalcairo.com">Info@iesregalcairo.com</a>
+                        </div>
+                        <div>
+                            <img
+                                src={MailIcon}
+                                alt="Mail Icon"
+                                className="footer-details__contacts-icon"
+                                decoding="async"
+                                loading="lazy"
+                            />
                             <a href="mailto:admissions@iesregalcairo.com">admissions@iesregalcairo.com</a>
                         </div>
                         <div>
