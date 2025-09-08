@@ -101,9 +101,9 @@ const Footer: React.FC = (): JSX.Element => {
                 decoding="async"
                 loading="lazy"
             />
-            <div className="footer-policy">
+            <div className="footer-policy relative z-10">
                 <p>© 2024 ES Regal Cairo International School. All rights reserved</p>
-                <p>Privacy Policy</p>
+                <p>Privacy Policy <a href="https://mkycommunications.com" target="_blank" rel="noopener noreferrer" title="MKY Communications — digital marketing agency" className="text-white! ml-1! inline-block">MKY Communications</a></p>
             </div>
         </footer>
     )
