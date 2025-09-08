@@ -103,7 +103,7 @@ const Footer: React.FC = (): JSX.Element => {
             />
             <div className="footer-policy relative z-10">
                 <p>© 2024 ES Regal Cairo International School. All rights reserved</p>
-                <p>Privacy Policy, Powered By<a href="https://mkycommunications.com" target="_blank" rel="noopener noreferrer" title="MKY Communications — digital marketing agency" className="text-white! ml-1! inline-block">MKY Communications</a></p>
+                <p>Privacy Policy Powered By <a href="https://mkycommunications.com" target="_blank" rel="noopener noreferrer" title="MKY Communications — digital marketing agency" className="text-white! ml-1! inline-block">MKY Communications</a></p>
             </div>
         </footer>
     )
