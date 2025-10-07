@@ -62,7 +62,7 @@ const HomePage: React.FC = (): JSX.Element => {
                             <p>
                                 A place where you can unlock your child's potential.
                             </p>
-                            <a className="top-banner__btn" href="https://regalcis.typeform.com/2025admission">
+                            <a className="top-banner__btn" href="https://iesregalcairo.com/contact">
                                 Apply Now
                             </a>
                         </div>
