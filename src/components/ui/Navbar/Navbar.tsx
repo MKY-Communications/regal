@@ -55,7 +55,7 @@ export const RegalNavBar: React.FC<RegalNavBarProps> = ({setOpen, open}): JSX.El
                             Global
                         </p>
                         {/* Contact Us Btn Or Drawer Menu*/}
-                        <a className="contact-us-btn" href="https://regalcis.typeform.com/2025admission">
+                        <a className="contact-us-btn" href="https://iesregalcairo.com/contact">
                             Admissions
                         </a>
                 </div>
